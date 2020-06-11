@@ -1,0 +1,9 @@
+- hosts: all
+  vars:
+ name:
+   - Prasad
+   - Srinivas
+ tasks:
+ - name: Ansible Array Example
+   debug:
+    msg: "{{ name[1] }}"
