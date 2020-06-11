@@ -1,0 +1,11 @@
+--- 
+#Tsting 
+#ansible_facts['os_family'] == "Debian"
+- hosts: all 
+   vars: 
+      test1: "Hello" 
+   tasks: 
+      - name: Testing Ansible variable 
+      debug: 
+         msg: "Equals" 
+         when: test1 == "Hello" 
