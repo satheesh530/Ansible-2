@@ -1,0 +1,7 @@
+- hosts: all
+  vars:
+ name: kolaparthi
+  tasks:
+  - name: Ansible Basic Variable 
+    debug:
+     msg: "{{ name }}"
