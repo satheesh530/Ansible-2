@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+  - name: Ansible timestamp filename example
+    command: touch Srinivas{{ansible_date_time.date}}.log
